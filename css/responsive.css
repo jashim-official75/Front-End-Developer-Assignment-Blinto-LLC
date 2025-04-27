@@ -59,6 +59,7 @@
         justify-content: center;
         width: 100%;
     }
+
     .download__app-image img 
     {
         position: static;
@@ -68,11 +69,13 @@
         margin-top: 5rem;
 
     }
+
     .download__app-cta 
     {
         text-align: center;
         justify-content: center;
     }
+
     .download__app-area {
         padding: 5rem 0 0;
     }
@@ -84,14 +87,17 @@
     {
         display: none;
     }
+
     .cta--mobile 
     {
         display: block;
     }
+
     .hidden 
     {
         display: block;
     }
+
     .header__navigation 
     {
         position: absolute;
@@ -104,8 +110,8 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
-
     }
+
     .header__navigation.active 
     {
         max-height: 500px;
@@ -114,6 +120,7 @@
         top: 6rem;
         transition: max-height 1s ease;
     } 
+
     .header__navigation ul 
     {
         flex-direction: column;
@@ -121,10 +128,12 @@
         padding: 2rem 0;
       
     }
+
     .header__navigation-cta 
     {
         padding-bottom: 2rem;
     }
+
     .header__navigation ul li 
     {
         padding: 0;
@@ -132,11 +141,13 @@
         text-align: center;
         margin: 1rem auto;
     }
+
     .header__navigation ul li a 
     {
         text-align: center;
         display: block;
     }
+
     #hamburger 
     {
         font-size: 3rem;
@@ -148,9 +159,11 @@
     .partners__wrapper .partner__logo {
         width: auto;
     }
+
     .pt-10 {
         padding-top: 3rem;
     }
+
     .progressive__data 
     {
         flex-direction: column;
@@ -189,7 +202,16 @@
         width: 80%;
         margin: 1rem auto 0;
     }
-  
+
+    .gap-2 {
+        gap: 1rem;
+    }
+
+    .our__features 
+    {
+        gap: 3rem;
+        padding: 0 1.5rem;
+    }
 }
 
 @media(max-width:575px)
@@ -231,7 +253,15 @@
 
     #load__morebtn 
     {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
         width: 100%;
     }
+
+    #load__morebtn:hover img
+    {
+        filter: invert(1);
+    } 
 }
