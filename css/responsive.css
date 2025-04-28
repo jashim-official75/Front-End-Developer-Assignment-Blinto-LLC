@@ -7,7 +7,11 @@
     .download__app-image img {
         top: 55%;
         width: 60%;
-        right: -20rem;
+        right: -11rem;
+    }
+    .container-fluid 
+    {
+        max-width:90%;
     }
 }
 
@@ -31,8 +35,23 @@
         column-gap: 0rem;
     }
 
+    .container {
+        padding: 0 1.5rem;
+      }
+
     section {
         padding: 3rem 0;
+    }
+    .testomonials__item {
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .testomonials {
+        column-gap: 1.5rem;
+    }
+
+    .whoisit__for-item {
+        padding: 2rem 0 2rem 3rem;
     }
 }
 
@@ -176,7 +195,7 @@
     }
 
     .whoisit__for-item {
-        padding: 0rem 0 0rem 3rem;
+        padding: 2rem 0 2rem 3rem;
     }
     .testomonials__item 
     {
@@ -195,12 +214,12 @@
     }
 
     .whoisit__for-item::after {
-        left: 16px;
+        left: 1rem;
         width: 3px;
     }
 
     .whoisit__for-img {
-        width: 80%;
+        width: 90%;
         margin: 1rem auto 0;
     }
 
@@ -212,6 +231,15 @@
     {
         gap: 3rem;
         padding: 0 1.5rem;
+    }
+    .office__location-item  
+    {
+        margin-bottom: 2rem;
+    }
+
+    .footer__bottom 
+    {
+        padding: 3rem 0 10rem;
     }
 }
 
@@ -226,11 +254,21 @@
     {
         width: 100%;
     }
+    
     .testomonials {
         column-count: 1;
         column-gap: 2rem;
+        padding: 3rem 0;
     }
-
+    .testomonials {
+    column-count: 1;
+    column-gap: 2rem;
+    padding: 3rem 0;
+} 
+.office__location 
+{
+    padding: 3rem 0 0; 
+}
     .footer__area 
     {
         flex-direction: column;
@@ -265,4 +303,47 @@
     {
         filter: invert(1);
     } 
+
+      .col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .whoisit__for-img {
+        width: 100%;
+    }
+    .show-desktop 
+    {
+        display: none;
+    }
+
+    .section__heading {
+        font-size: clamp(3rem, 5vw, 3.6rem);
+        font-weight: 800;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (min-width:575px)
+{
+    .show-desktop 
+    {
+        display: block;
+    } 
+}
+
+@media(max-width:375px)
+{
+    .partners__wrapper .partner__logo {
+        width: 9rem;
+    }
+
+    .partners__wrapper {
+        row-gap: 0;
+        column-gap: 3rem;
+        justify-content:flex-start;
+    }
+
+    .py-5 {
+        padding: 1rem 1.5rem;
+    }
 }

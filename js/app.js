@@ -1,21 +1,25 @@
+// =====================
 // Accordion
-
+// =====================
 
 const faqItems = document.querySelectorAll('.faq-item');
 
-  faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-    //   item.classList.toggle('active');
+faqItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const isActive = item.classList.contains('active');
 
-    faqItems.forEach(i=>i.classList.remove('active'));
-    item.classList.add('active');
+    faqItems.forEach(i => i.classList.remove('active'));
 
-
-    });
+    if (!isActive) {
+      item.classList.add('active');
+    }
   });
+});
 
 
+// ========================
 //   ScrollTO TOp Button
+// ========================
 
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
@@ -38,7 +42,9 @@ scrollToTopBtn.addEventListener('click',()=>{
     });
 });
 
+// =========================
 // Hamburger menu active
+// =========================
 
 const hamBurger = document.querySelector('#hamburger');
 
@@ -56,8 +62,10 @@ navMenu.addEventListener('click',()=>{
     navigation.classList.toggle('active');
 });
 
-// Load more card
 
+// =====================
+// Load more card
+// =====================
 
 const loadMoreBtn = document.getElementById("load__morebtn");
 
