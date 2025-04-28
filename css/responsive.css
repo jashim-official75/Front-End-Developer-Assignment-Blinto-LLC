@@ -241,6 +241,10 @@
     {
         padding: 3rem 0 10rem;
     }
+    
+    .partners__wrapper .partner__logo {
+        width: 9rem;
+    }
 }
 
 @media(max-width:575px)
