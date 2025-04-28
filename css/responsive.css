@@ -263,13 +263,23 @@
     }
 
     .footer__area-item {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
-    
+
     .footer__bottom {
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
+    }
+
+    .faq-icon 
+    {
+        margin-right:1rem;
+    }
+
+    .footer__bottom__logo 
+    {
+        margin-bottom: 1rem;
     }
 
     .extra-card {
