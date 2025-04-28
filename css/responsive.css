@@ -260,18 +260,21 @@
 
     .footer__area {
         flex-direction: column;
+        gap:0;
     }
 
     .footer__area-item {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     .footer__bottom {
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
     }
-
+    .faq-item 
+    {
+        gap:0;
+    }
     .faq-icon 
     {
         margin-right:1rem;
@@ -279,7 +282,7 @@
 
     .footer__bottom__logo 
     {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .extra-card {
